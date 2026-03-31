@@ -63,6 +63,9 @@ nav.scrolled {
     letter-spacing: 2px;
 }
 
+/* Mobile Top Branding (Hidden on Desktop) */
+.mobile-top-bar { display: none; }
+
 /* Mobile Navigation Pill */
 .mobile-nav-pill {
     display: none;
@@ -93,12 +96,13 @@ nav.scrolled {
     nav.desktop-nav { display: none; }
     .mobile-nav-pill { display: flex; }
     .mobile-top-bar {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         top: 2rem;
         left: 0;
         width: 100%;
-        text-align: center;
         z-index: 1000;
     }
 }
