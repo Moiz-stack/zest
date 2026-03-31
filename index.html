@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Zest AI Hub | Practical AI Education</title>
     <meta name="description" content="Zest AI Hub is an emerging EdTech initiative bridging the gap in AI education through hands-on learning and real-world innovation.">
     <!-- Google Fonts: Outfit -->
@@ -13,8 +13,8 @@
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav>
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
         <div class="container nav-content">
             <div class="logo">ZEST <span>AI HUB</span></div>
             <ul class="nav-links">
@@ -27,6 +27,19 @@
         </div>
     </nav>
 
+    <!-- Mobile Top Branding -->
+    <header class="mobile-top-bar">
+        <div class="logo">ZEST <span>AI HUB</span></div>
+    </header>
+
+    <!-- Mobile Navigation (Floating Bottom Pill) -->
+    <div class="mobile-nav-pill">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#vision" class="nav-item">Vision</a>
+        <a href="#kids" class="nav-item">Kids</a>
+        <a href="#mission" class="nav-item">Mission</a>
+    </div>
+
     <!-- Hero Section -->
     <header class="hero">
         <div class="container">
@@ -36,7 +49,7 @@
                     Generation with Practical AI
                 </h1>
                 <p>Zest AI Hub is an emerging EdTech initiative bridging the theoretical gap in AI education through hands-on learning and real-world innovation.</p>
-                <div style="margin-top: 3rem;">
+                <div class="hero-cta-wrapper">
                     <a href="#about" class="btn-main">Discover More</a>
                 </div>
             </div>
@@ -51,9 +64,9 @@
                     <h2>Transforming <span>Learners</span></h2>
                     <p>At Zest AI Hub, we move beyond theory. We empower students with practical knowledge of Artificial Intelligence through hands-on STEM experiences and real-world case studies.</p>
                 </div>
-                <p style="margin-top: 2rem; color: var(--text-muted); font-size: 0.95rem;">Empowering the next generation with future-ready skills that bridge the gap from consumption to creation.</p>
+                <p class="secondary-p">Empowering the next generation with future-ready skills that bridge the gap from consumption to creation.</p>
             </div>
-            <div class="img-frame reveal">
+            <div class="img-frame reveal highlight-img">
                 <img src="hero_purple.png" alt="Zest AI Hub Environment">
             </div>
         </div>
@@ -62,22 +75,25 @@
     <!-- Vision / Gap Section (Bento Grid) -->
     <section id="vision" class="section">
         <div class="container">
-            <div class="section-head reveal" style="text-align: center; margin: 0 auto 6rem;">
+            <div class="section-head reveal text-center">
                 <h2>Bridging <span>The Gap</span></h2>
                 <p>In many regions, especially Pakistan, AI education is limited and often theoretical. We've built Zest AI Hub to bridge this accessibility divide.</p>
             </div>
             <!-- Staggered Group Animation -->
             <div class="bento reveal-group">
                 <div class="bento-item">
-                    <h3>🌍 Accessible</h3>
+                    <div class="card-deco">🌍</div>
+                    <h3>Accessible</h3>
                     <p>Equitable AI learning opportunities across borders, ensuring no learner is left behind in the digital age.</p>
                 </div>
-                <div class="bento-item" style="border-color: var(--acc-primary); background: rgba(188, 19, 254, 0.05);">
-                    <h3>🛠️ Practical</h3>
+                <div class="bento-item featured-bento">
+                    <div class="card-deco">🛠️</div>
+                    <h3>Practical</h3>
                     <p>Application-based training that shifts the focus from theory to impact and real-world problem-solving.</p>
                 </div>
                 <div class="bento-item">
-                    <h3>⚡ Impactful</h3>
+                    <div class="card-deco">⚡</div>
+                    <h3>Impactful</h3>
                     <p>Exposure to real-world AI applications that transform students into critical thinkers and innovators.</p>
                 </div>
             </div>
@@ -85,32 +101,32 @@
     </section>
 
     <!-- Kids Section -->
-    <section id="kids" class="section">
-        <div class="container grid-2">
-            <div class="img-frame reveal" style="text-align: center; border: none; background: none;">
-                 <span style="font-size: 8rem; filter: drop-shadow(0 0 30px var(--acc-primary)); opacity: 0.9;">🎓</span>
+    <section id="kids" class="section alt-bg">
+        <div class="container grid-2 reverse-on-mobile">
+            <div class="img-frame reveal icon-visual">
+                 <span>🎓</span>
             </div>
             <div class="content reveal">
                 <div class="section-head">
                     <h2>Empowering <span>Children</span></h2>
                     <p>AI education should begin early. It's about ensuring children are confident, informed, and capable of navigating a world shaped by intelligent technologies.</p>
                 </div>
-                <p style="margin-top: 2rem; color: var(--text-muted);">Developing critical thinking and creativity by using AI as a tool for progress rather than just consumption.</p>
+                <p class="secondary-p">Developing critical thinking and creativity by using AI as a tool for progress rather than just consumption.</p>
             </div>
         </div>
     </section>
 
     <!-- Mission Section (Core Impact) -->
-    <section id="mission" class="section" style="background: radial-gradient(circle at center, rgba(125, 18, 255, 0.05) 0%, transparent 70%);">
-        <div class="container" style="text-align: center;">
+    <section id="mission" class="section mission-area">
+        <div class="container text-center">
             <div class="reveal">
-                <div class="section-head" style="margin: 0 auto;">
-                    <h2 style="font-size: 1rem; letter-spacing: 5px; color: var(--acc-secondary); margin-bottom: 2rem;">OUR MISSION</h2>
+                <div class="section-head">
+                    <h2 class="sub-label">OUR MISSION</h2>
                 </div>
-                <p style="font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 300; line-height: 1.1; margin: 2rem auto; color: #fff; font-style: italic; max-width: 1000px;">
+                <p class="mission-quote">
                     "To empower the next generation with AI-driven skills by making education accessible, practical, and innovation-focused."
                 </p>
-                <p style="color: var(--text-muted); font-size: 1.1rem; letter-spacing: 2px;">BUILDING A GLOBAL COMMUNITY OF INNOVATORS.</p>
+                <p class="mission-subtxt">BUILDING A GLOBAL COMMUNITY OF INNOVATORS.</p>
             </div>
         </div>
     </section>
@@ -118,16 +134,16 @@
     <!-- Partners / Recognition Grid -->
     <section id="partners" class="section">
         <div class="container">
-            <div class="section-head reveal" style="text-align: center; margin: 0 auto 5rem;">
+            <div class="section-head reveal text-center">
                 <h2>Global <span>Affiliations</span></h2>
             </div>
             <div class="bento reveal-group">
-                <div class="bento-item" style="grid-column: span 1.5;">
-                    <h3 style="color: var(--acc-secondary);">AI in STEM (USA)</h3>
+                <div class="bento-item span-full-on-mobile">
+                    <h3 class="secondary-accent">AI in STEM (USA)</h3>
                     <p>Proudly affiliated with AI in STEM, a USA-based startup dedicated to advancing global AI education quality.</p>
                 </div>
-                <div class="bento-item" style="grid-column: span 1.5; border-color: var(--acc-primary);">
-                    <h3 style="color: var(--acc-primary);">CPD Group (UK)</h3>
+                <div class="bento-item featured-partners span-full-on-mobile">
+                    <h3 class="primary-accent">CPD Group (UK)</h3>
                     <p>Recognized as an Approved CPD Provider ensuring international standards of professional excellence.</p>
                 </div>
             </div>
@@ -135,12 +151,12 @@
     </section>
 
     <!-- Footer Masterpiece -->
-    <footer class="section">
+    <footer class="section-footer">
         <div class="container">
             <div class="footer-logo">ZEST <span>AI HUB</span></div>
-            <p style="color: var(--text-muted); margin-bottom: 3rem; max-width: 500px; margin: 0 auto 3rem;">Empowering students to move beyond theory and develop future-ready skills in Artificial Intelligence.</p>
+            <p class="footer-p">Empowering students to move beyond theory and develop future-ready skills in Artificial Intelligence.</p>
             <p class="footer-contact">moiz.workmail@gmail.com</p>
-            <div style="margin-top: 5rem; color: rgba(255, 255, 255, 0.2); font-size: 0.75rem; letter-spacing: 3px;">
+            <div class="footer-bottom">
                 &copy; 2026 ZEST AI HUB. FUTURE ORIENTED EDUCATION.
             </div>
         </div>
